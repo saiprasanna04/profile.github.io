@@ -293,13 +293,38 @@
   </section>
   <section id="contact">
     <div class="contact-form mt-5">
-      <form action="https://formspree.io/f/mdalkgyw" method="POST">>
-        <H3>Get In Touch</H3>
-        <input type="text" class="form-control" placeholder="Your Name" required />
-        <input type="email" class="form-control" placeholder="Your Email" required />
-        <textarea rows="4" class="form-control" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-primary mt-3">Send Message</button>
-      </form>
+     <form action="https://formspree.io/f/mdalkgyw" method="POST">
+  <h3>Get In Touch</h3>
+
+  <input
+    type="text"
+    name="name"
+    class="form-control"
+    placeholder="Your Name"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    class="form-control"
+    placeholder="Your Email"
+    required
+  />
+
+  <textarea
+    name="message"
+    rows="4"
+    class="form-control"
+    placeholder="Your Message"
+    required
+  ></textarea>
+
+  <button type="submit" class="btn btn-primary mt-3">
+    Send Message
+  </button>
+</form>
+
       <p id="form-status"></p>
 
    </div>
